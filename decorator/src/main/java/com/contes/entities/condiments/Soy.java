@@ -2,20 +2,19 @@ package com.contes.entities.condiments;
 
 import com.contes.entities.Beverage;
 
-public class Mocha extends Beverage{
+public class Soy extends CondimentDecorator{
 
     Beverage beverage;
 
-    public Mocha(Beverage beverage) {
+    public Soy(Beverage beverage) {
         this.beverage = beverage;
     }
 
     public String getDescription() {
-        return beverage.getDescription() + ", Mocha";
+        return beverage.getDescription() + ", Soy";
     }
 
     public double cost() {
-        return beverage.cost() + 0.20;
+        return beverage.cost() + 0.15;
     }
-    
 }
